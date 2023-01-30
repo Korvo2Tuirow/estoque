@@ -1,8 +1,12 @@
 let descricaoAdd;
+let valorAdd;
+let quantAdd;
 
 let enviar = document.querySelector("#enviar").addEventListener('click', enviarDesc);
 
 function enviarDesc(){
-   let descricaoAdd = document.querySelector("#inputDesc").value;
-   alert(descricaoAdd);
+   descricaoAdd = document.querySelector("#inputDesc").value;
+   valorAdd = document.querySelector("#inputValor").value;
+   quantAdd = document.querySelector("#inputQuant").value;
+   alert(descricaoAdd + valorAdd + quantAdd);
 };
