@@ -1,4 +1,4 @@
-import { Produto } from "./poo";
+import { Produto } from "./poo.js";
 
 let descricaoAdd;
 let quantidadeAdd;
