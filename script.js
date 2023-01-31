@@ -14,7 +14,7 @@ class Produto{
   set (descricao, quantidade, valor){
     return this._descricao = descricao,
            this._quantidade = quantidade,
-           this._valor = totalValor();
+           this._valor = this._quantidade * this._valor;
   };
   totalValor(){
     return (this._quantidade * this._valor).toFixed(2);
