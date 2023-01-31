@@ -16,4 +16,5 @@ function enviarDesc(){
    
    p1 = new Produto(descricaoAdd, quantidadeAdd, valorAdd);
   console.log(p1);
+  let c1 = document.querySelector("#c1").innerHTML = p1._descricao;
 };
