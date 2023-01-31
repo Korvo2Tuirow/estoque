@@ -17,5 +17,8 @@ function enviarDesc(){
    
    p1 = new Produto(descricaoAdd, quantidadeAdd, valorAdd);
   console.log(p1);
-  let c1 = document.querySelector("#c1").innerHTML = p1._descricao;
+  let d1 = document.querySelector("#d1").innerHTML = p1._descricao;
+  let q1 = document.querySelector("#q1").innerHTML = p1._quantidade;
+  let vu1 = document.querySelector("#vu").innerHTML = p1._valor;
+  let vt = document.querySelector("#vt").innerHTML = p1._valorTotal;
 };
