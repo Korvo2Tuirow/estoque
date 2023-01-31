@@ -10,6 +10,7 @@ let p1;
 let enviar = document.querySelector("#enviar").addEventListener('click', enviarDesc);
 
 function enviarDesc(){
+  event.preventDefault();
    descricaoAdd = document.querySelector("#inputDesc").value;
    quantidadeAdd = document.querySelector("#inputQuant").value;
    valorAdd = document.querySelector("#inputValor").value;
