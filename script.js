@@ -1,22 +1,23 @@
 import { Produto } from "./poo.js";
 
-let descricaoAdd, quantidadeAdd, valorAdd, p1;
+let descricaoAdd, quantidadeAdd, valorAdd, p1, d1, q1, vu1,vt;
 
-let enviar = document
-  .querySelector("#enviar")
-  .addEventListener("click", enviarDesc);
+document.querySelector("#enviar").addEventListener("click", enviarDesc);
 
 function enviarDesc() {
-  preventDefault();
+ // preventDefault();
   descricaoAdd = document.querySelector("#inputDesc").value;
   quantidadeAdd = document.querySelector("#inputQuant").value;
   valorAdd = document.querySelector("#inputValor").value;
 
-  p1 = new Produto(descricaoAdd, quantidadeAdd, valorAdd);
+  new Produto(descricaoAdd, quantidadeAdd, valorAdd);
 
-  let d1 = (document.querySelector("#d1").innerHTML = p1._descricao);
-  let q1 = (document.querySelector("#q1").innerHTML = p1._quantidade);
-  let vu1 = (document.querySelector("#vu").innerHTML = p1._valor);
-  let vt = (document.querySelector("#vt").innerHTML = p1._valorTotal);
+  d1 = document.querySelector("#d1").innerHTML = p1._descricao;
+  q1 = document.querySelector("#q1").innerHTML = p1._quantidade;
+  vu1 = document.querySelector("#vu").innerHTML = p1._valor;
+  vt = document.querySelector("#vt").innerHTML = p1._valorTotal;
   console.log(p1);
+
+
 };
+
