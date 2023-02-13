@@ -9,10 +9,10 @@ function enviarDesc() {
     let valorValue = document.querySelector("#inputValor").value;
 
    if(descValue == "" || quantValue == "" || valorValue == ""){
-        alert("PREENCHA OS CAMPOS ABAIXO");
+        alert("PREENCHA OS CAMPOS. (Código apenas para Busca)");
     
     }else{
-          
+
     console.log(descValue);
     console.log(quantValue);
     console.log(valorValue);
