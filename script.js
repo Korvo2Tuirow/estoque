@@ -28,3 +28,13 @@ function enviarDesc() {
 
 };
 
+document.querySelector("#limpar").addEventListener("click", limpar)
+
+function limpar(){
+
+    let codeValue = document.querySelector("#inputCode").value = ""; 
+    let descValue = document.querySelector("#inputDesc").value = "";
+    let quantValue = document.querySelector("#inputQuant").value = "";
+    let valorValue = document.querySelector("#inputValor").value = "";
+
+};
