@@ -24,6 +24,9 @@ function enviarDesc() {
 
     document.querySelector(".tabela").style.display = "flex";
 
+    let p1 = new Produto(descValue, quantValue, valorValue);
+        console.log(p1);
+        
     };
 
 };
