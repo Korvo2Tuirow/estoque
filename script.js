@@ -1,13 +1,24 @@
 import { Produto } from "./poo.js";
 
-let descricaoAdd, quantidadeAdd, valorAdd, p1, d1, q1, vu1,vt;
-
 document.querySelector("#enviar").addEventListener("click", enviarDesc);
 
 function enviarDesc() {
- // preventDefault();
-  
 
+    let descValue = document.querySelector("#inputDesc").value;
+    let quantValue = document.querySelector("#inputQuant").value;
+    let valorValue = document.querySelector("#inputValor").value;
+  
+    console.log(descValue);
+    console.log(quantValue);
+    console.log(valorValue);
+
+    document.querySelector(".descValue").innerHTML = descValue;
+    document.querySelector(".quantValue").innerHTML = quantValue;
+    document.querySelector(".valorValue").innerHTML = `R$ ${valorValue}`;
+    document.querySelector(".totalValue").innerHTML = `R$ ${(quantValue * valorValue).toFixed(2)}`;
+
+    document.querySelector(".tabela").style.display = "flex";
+  
 
 };
 
