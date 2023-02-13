@@ -15,7 +15,7 @@ header{
   max-width: 800px;
   min-width: 400px;
   margin: auto;
-  padding: 20px;
+  padding: 20px 20px 0px;
 }
 h1{
   display: flex;
@@ -44,7 +44,7 @@ p, h1{
   width: 100%;
   flex-direction: column;
   margin:auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 20px;
   background-color: #1f2c4b;
   border-radius: 10px;
@@ -61,14 +61,13 @@ p, h1{
   width: 100%;
   height: 30px;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .codigo, .descricao, .quantidade, .valorUnitario, .valorTotal {
   display: flex;
   border: 1px solid #555;
-  width: 150px;
-  
+  min-width: 120px;  
   justify-content: center;
   height: 100%;
   align-items: center;
