@@ -31,6 +31,10 @@ p, h1{
   color: #fff;
 }
 
+span{
+  color: #fff;
+}
+
 #container {
   max-width: 800px;
   min-width: 400px;
@@ -94,15 +98,22 @@ p, h1{
   min-height: 30px;
   margin: 5px 0 10px 0;
   padding-left: 10px;
+  outline-color: #8c00ff;
+  
 
 }
 
-#inputValor, #codeID, #inputQuant {
+#inputValor, #inputCode, #inputQuant {
   width: 150px;
   height: 30px;
   margin: 5px 0 10px 0;
   padding-left: 10px;
+  outline-color: #8c00ff;
 }
+
+
+
+
 
 button {
   height: 30px;

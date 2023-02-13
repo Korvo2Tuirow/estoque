@@ -7,7 +7,12 @@ function enviarDesc() {
     let descValue = document.querySelector("#inputDesc").value;
     let quantValue = document.querySelector("#inputQuant").value;
     let valorValue = document.querySelector("#inputValor").value;
-  
+
+   if(descValue == "" || quantValue == "" || valorValue == ""){
+        alert("PREENCHA OS CAMPOS ABAIXO");
+    
+    }else{
+          
     console.log(descValue);
     console.log(quantValue);
     console.log(valorValue);
@@ -18,7 +23,8 @@ function enviarDesc() {
     document.querySelector(".totalValue").innerHTML = `R$ ${(quantValue * valorValue).toFixed(2)}`;
 
     document.querySelector(".tabela").style.display = "flex";
-  
+
+    };
 
 };
 
